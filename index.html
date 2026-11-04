@@ -1737,6 +1737,45 @@ summary {
   }
 }
 </style>
+
+
+
+
+<style id="fix-ultra-diali-B-3vapeur-mobile">
+/* FIX ULTRA FINAL - Site diali B + 3 vapeurs - Prof: logo coupé - ZID N9ES */
+@media (max-width: 768px) {
+  /* Hero 88vh -> 52vh ultra réduit */
+  div.relative.h-\[88vh\] {
+    height: 52vh !important;
+    min-height: 360px !important;
+    max-height: 480px !important;
+  }
+  /* Image interior - center pour éviter coupe logo dans image */
+  div.relative.h-\[88vh\] img.absolute.inset-0 {
+    object-fit: cover !important;
+    object-position: center 45% !important;
+  }
+  /* Header */
+  header {
+    height: 68px !important;
+  }
+}
+@media (max-width: 480px) {
+  div.relative.h-\[88vh\] {
+    height: 46vh !important;
+    min-height: 320px !important;
+  }
+  div.relative.h-\[88vh\] img.absolute.inset-0 {
+    object-position: center 50% !important;
+  }
+}
+@media (max-width: 375px) {
+  div.relative.h-\[88vh\] {
+    height: 42vh !important;
+    min-height: 280px !important;
+  }
+}
+</style>
 </head>
 <body>
   <div id="root"></div>
